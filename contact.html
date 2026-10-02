@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twin Cities Animal Rescue | Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Twin Cities Animal Rescue</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact-info">
+      <section>
+        <h2>Service Area</h2>
+        <p>We serve animals and community members throughout the Twin Cities area.</p>
+      </section>
+
+      <section>
+        <h2>Office Hours</h2>
+        <p>Office hours are available by contacting Twin Cities Animal Rescue.</p>
+        <p>Contact the rescue team for current availability and scheduling information.</p>
+      </section>
+    </div>
+
+    <section>
+      <h2>Volunteer, Foster, or Adoption Interest Form</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your Contact Information</legend>
+          <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="60">
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>How Would You Like to Help?</legend>
+          <p>Interest type:</p>
+          <p>
+            <input type="radio" id="volunteer" name="interest" value="volunteer" required>
+            <label for="volunteer">Volunteer</label>
+          </p>
+          <p>
+            <input type="radio" id="foster" name="interest" value="foster">
+            <label for="foster">Foster</label>
+          </p>
+          <p>
+            <input type="radio" id="adoption" name="interest" value="adoption">
+            <label for="adoption">Adoption information</label>
+          </p>
+          <p>
+            <label for="availability">Availability:</label>
+            <select id="availability" name="availability" required>
+              <option value="">Choose an option</option>
+              <option value="weekdays">Weekdays</option>
+              <option value="evenings">Evenings</option>
+              <option value="weekends">Weekends</option>
+              <option value="flexible">Flexible</option>
+            </select>
+          </p>
+          <p>
+            <label for="experience">Experience with pets:</label><br>
+            <textarea id="experience" name="experience" rows="4" cols="40" required minlength="10"></textarea>
+          </p>
+          <p>
+            <label for="message">Short message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="40" required maxlength="500"></textarea>
+          </p>
+        </fieldset>
+
+        <button type="submit">Submit Interest Form</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Twin Cities Animal Rescue</p>
+  </footer>
+</body>
+</html>
