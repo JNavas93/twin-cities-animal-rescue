@@ -1,0 +1,199 @@
+/* Twin Cities Animal Rescue - Touchstone 3 */
+/* Mobile-first base styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #263238;
+  background-color: #f7f4ed;
+}
+
+header {
+  background-color: #234e52;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 0.65rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #3f7c78;
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #d89b5b;
+  outline-offset: 2px;
+}
+
+main {
+  width: min(92%, 1000px);
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #234e52;
+}
+
+img,
+picture img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 6px;
+}
+
+figure {
+  margin: 1rem 0;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.action-link,
+button {
+  display: inline-block;
+  background-color: #d89b5b;
+  color: #263238;
+  padding: 0.7rem 1rem;
+  border: 2px solid #d89b5b;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.action-link:hover,
+.action-link:focus,
+button:hover,
+button:focus {
+  background-color: #ffffff;
+  color: #234e52;
+}
+
+fieldset {
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  border: 2px solid #3f7c78;
+  border-radius: 6px;
+}
+
+legend {
+  padding: 0 0.4rem;
+  color: #234e52;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  max-width: 520px;
+  padding: 0.65rem;
+  margin-top: 0.25rem;
+  border: 1px solid #263238;
+  border-radius: 4px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #234e52;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Larger-screen layout */
+@media (min-width: 700px) {
+  header {
+    padding: 2rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  main {
+    padding: 2rem 0;
+  }
+
+  .service-layout,
+  .contact-info {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .service-layout section,
+  .contact-info section {
+    flex: 1;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+}
