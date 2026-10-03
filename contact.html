@@ -35,16 +35,18 @@
 
     <section>
       <h2>Volunteer, Foster, or Adoption Interest Form</h2>
-      <form action="#" method="post">
+      <form action="#" method="post" id="interest-form" novalidate>
         <fieldset>
           <legend>Your Contact Information</legend>
           <p>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required minlength="2" maxlength="60">
+            <span id="name-error" class="error-message" aria-live="polite"></span>
           </p>
           <p>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            <span id="email-error" class="error-message" aria-live="polite"></span>
           </p>
         </fieldset>
 
@@ -76,14 +78,17 @@
           <p>
             <label for="experience">Experience with pets:</label><br>
             <textarea id="experience" name="experience" rows="4" cols="40" required minlength="10"></textarea>
+            <span id="experience-error" class="error-message" aria-live="polite"></span>
           </p>
           <p>
             <label for="message">Short message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="40" required maxlength="500"></textarea>
+            <textarea id="message" name="message" rows="4" cols="40" required minlength="10" maxlength="500"></textarea>
+            <span id="message-error" class="error-message" aria-live="polite"></span>
           </p>
         </fieldset>
 
         <button type="submit">Submit Interest Form</button>
+        <p id="form-status" class="status-message" aria-live="polite"></p>
       </form>
     </section>
   </main>
@@ -91,5 +96,6 @@
   <footer>
     <p>&copy; 2026 Twin Cities Animal Rescue</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -43,10 +43,26 @@
       </ul>
       <p><a class="action-link" href="contact.html">Complete our interest form to get involved.</a></p>
     </section>
+
+    <section id="interest-tracker">
+      <h2>Save Your Volunteer Interests</h2>
+      <p>Select the ways you may want to help. Your choices can be saved on this device so they are still here when you return.</p>
+      <div class="interest-options">
+        <label><input type="checkbox" name="tracker-interest" value="volunteer"> General Volunteering</label>
+        <label><input type="checkbox" name="tracker-interest" value="foster"> Fostering</label>
+        <label><input type="checkbox" name="tracker-interest" value="adoption"> Adoption Information</label>
+        <label><input type="checkbox" name="tracker-interest" value="events"> Adoption Events</label>
+        <label><input type="checkbox" name="tracker-interest" value="transport"> Animal Transport</label>
+      </div>
+      <button type="button" id="save-interests">Save My Interests</button>
+      <p id="tracker-feedback" class="status-message" aria-live="polite"></p>
+      <p id="saved-interests" class="saved-result" aria-live="polite">No interests saved yet.</p>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2026 Twin Cities Animal Rescue</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

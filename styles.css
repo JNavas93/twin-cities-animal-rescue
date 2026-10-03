@@ -197,3 +197,48 @@ footer p {
     padding: 1.5rem;
   }
 }
+
+
+/* Touchstone 4 interactive feature and validation */
+.interest-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 1rem 0;
+}
+
+.interest-options label {
+  padding: 0.65rem;
+  background-color: #f7f4ed;
+  border-radius: 6px;
+}
+
+.saved-result {
+  padding: 0.8rem;
+  border-left: 4px solid #3f7c78;
+  background-color: #f7f4ed;
+  font-weight: bold;
+}
+
+.status-message {
+  font-weight: bold;
+  color: #234e52;
+}
+
+.error-message {
+  display: block;
+  margin-top: 0.25rem;
+  color: #9b1c1c;
+  font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  .interest-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .interest-options label {
+    flex: 1 1 220px;
+  }
+}
